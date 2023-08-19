@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
  
+/* shadcn config section */
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -75,10 +76,13 @@
   }
 }
 
+/* hero section */
 .hero_ {
   @apply h-[100vh] snap-always snap-start bg-[url('/geimg.jpg')] bg-no-repeat bg-cover bg-center bg-slate-500 bg-blend-multiply text-white
 }
-
+.nav_link{
+  @apply flex items-center
+}
 .hero_nav{
   @apply flex items-center justify-between text-xs sm:text-xl md:text-2xl font-serif px-10 pt-5
 }
@@ -90,4 +94,63 @@
 }
 .hero_text{
  @apply text-center text-xs sm:text-xl md:text-2xl w-[60%]
+}
+.loans{
+  @apply grid w-[270px] min-[376px]:w-[300px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[700px]
+}
+.loan_tab{
+  @apply text-xs sm:text-xl md:text-2xl font-serif px-10 py-5 bg-transparent hover:bg-transparent w-20 md:w-36 min-[321px]:w-24
+}
+.home{
+  @apply hover:bg-slate-400 hover:text-black rounded px-7 md:px-10 py-3 md:py-1
+}
+
+/* about section */
+.about{
+  @apply text-center text-white flex flex-col items-center
+}
+.about_h1{
+  @apply text-3xl min-[376px]:text-6xl py-5 min-[376px]:py-10 font-serif 
+}
+.about_text{
+  @apply text-xl px-3 sm:px-0 sm:text-3xl w-[320px] min-[376px]:w-[380px] sm:w-[580px] pt-6
+}
+.image_{
+  @apply rounded-full bg-transparent w-[125px] min-[376px]:w-[230px]
+}
+
+/*loan page*/
+.l_type{
+  @apply flex flex-col justify-around h-full
+}
+.loan_type {
+  @apply bg-blue-400 w-[80%] mx-auto rounded-lg p-10 
+}
+section {
+  @apply text-gray-600 font-serif
+}
+section > div {
+  @apply container px-5 py-7 sm:py-24 mx-auto
+}
+section > div > div {
+  @apply flex flex-wrap -mx-4 sm:-mb-10 text-center justify-center
+}
+section > div > div > div {
+  @apply h-[40vh] sm:w-1/2 mb-4 max-[390px]:mb-10 px-4 
+}
+section > div > div > div > div {
+ @apply rounded-full overflow-hidden max-[325px]:hidden h-40 sm:h-64 
+}
+section > div > div > div > div > img {
+  @apply object-cover object-center h-full w-full 
+}
+
+section > div > div > div > h2 {
+  @apply font-mono text-xl sm:text-2xl font-medium text-gray-900 mt-6
+}
+section > div > div > div > p {
+  @apply  text-base
+}
+section > h1 {
+  @apply text-4xl text-center
 }
