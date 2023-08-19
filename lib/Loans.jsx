@@ -14,7 +14,7 @@ const Loans = ({loans}) => {
                                             <img alt="content" src={item.image} />
                                         </div>
                                         <h2>{item.type}</h2>
-                                        <p>Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole brunch, slow-carb neutra irony.</p>
+                                        <p>{item.details}</p>
                                         {/* <button className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Button</button> */}
                                     </div>
                                 )

@@ -2,6 +2,7 @@
 import About from '@/lib/About'
 import HeroComponent from '@/lib/HeroComponent'
 import Loans from '@/lib/Loans'
+import Apply from '@/lib/Apply'
 
 export default function Home() {
   const loans = [
@@ -39,10 +40,12 @@ export default function Home() {
           <Loans loans={[{
             type: "Home Loan",
             image: "/homeloan.jpg",
+            details:"Rate of interest start from 7.65% , Construction Loans starts froms 7.65% , upto 16% Depend up cibil.",
           },
           {
             type: "Education Loan",
             image: "/eduloan.jpg",
+            details:"Rate of intrest Starts from 8.45%",
           },]} />
         </div>
         <div className='h-[100vh] snap-always snap-start bg-gradient-to-r from-[#ffdeda] to-[#dfeeff]'>
@@ -50,10 +53,12 @@ export default function Home() {
             {
               type: "Personal Loan",
               image: "/eduloan.jpg",
+              details:"",
             },
             {
               type: "Business Loan",
               image: "/eduloan.jpg",
+              details:"",
             },
           ]} />
         </div>
@@ -62,8 +67,17 @@ export default function Home() {
             {
               type: "Mortgage Loan",
               image: "/eduloan.jpg",
+              details:"",
+            },
+            {
+              type: "Agriculture Loan",
+              image: "/eduloan.jpg",
+              details:"",
             },
           ]} />
+        </div>
+        <div className='h-[100vh] snap-always snap-start bg-gradient-to-r from-[#ffdeda] to-[#dfeeff]'>
+          <Apply />
         </div>
       </div>
     </main>

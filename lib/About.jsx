@@ -10,6 +10,7 @@ const About = () => {
             width={230}
             height={230}
             className="image_"
+            alt='about'
         />
         <p className='about_text'>
         At Ganesh Enterprises, we offer diverse loans to meet 
